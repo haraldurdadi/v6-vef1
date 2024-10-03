@@ -1,23 +1,23 @@
- /*** Inngangsefni á forsíðu ***/
-  
- .intro {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: var(--spacing);
-  }
-  
-  .intro img {
+/*** Inngangsefni á forsíðu ***/
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--spacing);
+
+  img {
     order: 1;
     border-radius: var(--border-radius-image);
   }
-  
-  @media (min-width: 500px) {
-    .intro {
-      flex-direction: row;
-    }
-  
-    .intro img {
+}
+
+@media (width >= 500px) {
+  .intro {
+    flex-direction: row;
+
+    img {
       max-width: var(--max-width-image);
     }
   }
+}
